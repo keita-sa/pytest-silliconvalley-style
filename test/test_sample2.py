@@ -1,5 +1,6 @@
 import unittest
-import sample
+from sample_lib import sample
+
 
 class TestStringMethods(unittest.TestCase):
 
@@ -31,4 +32,3 @@ class TestStringMethods(unittest.TestCase):
         self.assertFalse(sample.is_positive(0))
         self.assertFalse(sample.is_positive(-1))
 
-        
