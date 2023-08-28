@@ -15,9 +15,11 @@ def db():
 def test_one(db):
     assert db.get(1)['name'] == 'Bob'
 
+
 # フィクスチャは複数のテストケースで共有できる
 def test_two(db):
     assert db.get(2)['name'] == 'Alice'
+
 
 # クラスベースのテストでも利用できる
 class TestUsers:
